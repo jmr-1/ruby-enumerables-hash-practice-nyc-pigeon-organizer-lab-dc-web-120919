@@ -19,14 +19,13 @@ def nyc_pigeon_organizer(data)
         tiny_hash = {key=>key2}
         new_hash[pigeon_name] = {key=>key2}
         
-        #need to figure out why merge isn't working 
-        
         #appends to an entry, else creates an entry with the key:value pair 
         if new_hash2[pigeon_name] != nil 
           new_hash2[pigeon_name].merge!(tiny_hash)
         else 
-          new_hash2[pigeon_name] = {key=>key2}
+          new_hash2[pigeon_name] = {key=>"#{key2}"}
         end 
+        
         
       end 
       #binding.pry 
