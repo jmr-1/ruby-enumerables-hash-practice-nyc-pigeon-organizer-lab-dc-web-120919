@@ -26,7 +26,6 @@ def nyc_pigeon_organizer(data)
         end 
         
         #problem with above is that it isn't an array
-        #below is an array but problem with accepting new values in the array 
         
         if new_hash[pigeon_name] == nil 
           new_hash[pigeon_name] = {key=>["#{key2}"]}
@@ -38,6 +37,9 @@ def nyc_pigeon_organizer(data)
         elsif new_hash[pigeon_name][key] == nil
           new_hash[pigeon_name].merge!({key=>["#{key2}"]})
         end 
+        
+        #note: the key here is in recognizing when an array exists
+        #when it doesn't, and how to create a new one with the hash 
         
       end 
     end 
