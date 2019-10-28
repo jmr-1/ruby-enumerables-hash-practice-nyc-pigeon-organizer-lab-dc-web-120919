@@ -31,7 +31,8 @@ def nyc_pigeon_organizer(data)
           new_hash[pigeon_name] = {key=>["#{key2}"]}
           #creates a new array 
         else 
-          
+          puts new_hash[pigeon_name][:key]
+          binding.pry 
           #appends to existing array 
         end 
         
