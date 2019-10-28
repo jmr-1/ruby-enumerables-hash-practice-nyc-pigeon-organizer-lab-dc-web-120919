@@ -32,10 +32,11 @@ def nyc_pigeon_organizer(data)
           new_hash[pigeon_name] = {key=>["#{key2}"]}
           #creates a new array 
         elsif new_hash[pigeon_name][key] != nil  
-          puts new_hash[pigeon_name][key]
           new_hash[pigeon_name][key] << key2.to_s 
           #binding.pry 
           #appends to existing array 
+        elsif new_hash[pigeon_name][key] == nil
+          new_hash[pigeon_name].merge!({key=>["#{key2}"]})
         end 
         
       end 
