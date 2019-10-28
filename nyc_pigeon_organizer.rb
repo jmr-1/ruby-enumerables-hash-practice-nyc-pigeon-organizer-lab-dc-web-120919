@@ -29,8 +29,10 @@ def nyc_pigeon_organizer(data)
         
         if new_hash[pigeon_name] == nil 
           new_hash[pigeon_name] = {key=>["#{key2}"]}
+          #creates a new array 
         else 
-          new_hash[pigeon_name][:key] << key2 
+          
+          #appends to existing array 
         end 
         
       end 
