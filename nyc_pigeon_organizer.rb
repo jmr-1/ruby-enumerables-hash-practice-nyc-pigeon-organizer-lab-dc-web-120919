@@ -20,9 +20,9 @@ def nyc_pigeon_organizer(data)
         new_hash[pigeon_name] = {key=>key2}
         
         #need to figure out why merge isn't working 
+        
         #below doesn't work because it's formatted like a AoH 
         #new_hash2[pigeon_name][key] = key2
-        
         #new_hash.merge!(pigeon_name=>{key=>key2}) #no need to interpolate, already string 
         
       end 
