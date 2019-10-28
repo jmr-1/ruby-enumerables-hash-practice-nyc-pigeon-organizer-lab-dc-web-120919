@@ -25,9 +25,8 @@ def nyc_pigeon_organizer(data)
         if new_hash2[pigeon_name] != nil 
           new_hash2[pigeon_name].merge!(tiny_hash)
         else 
-          
-          
-        #new_hash.merge!(pigeon_name=>{key=>key2}) #no need to interpolate, already string 
+          new_hash2[pigeon_name] = {key=>key2}
+        end 
         
       end 
       #binding.pry 
