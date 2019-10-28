@@ -26,16 +26,17 @@ def nyc_pigeon_organizer(data)
         end 
         
         #problem with above is that it isn't an array
+        #below is an array but problem with accepting new values in the array 
         
-        # if new_hash[pigeon_name] == nil 
-        #   new_hash[pigeon_name] = {key=>["#{key2}"]}
-        #   #creates a new array 
-        # else 
-        #   puts new_hash[pigeon_name][key]
-        #   new_hash[pigeon_name][key] << key2.to_s 
-        #   #binding.pry 
-        #   #appends to existing array 
-        # end 
+        if new_hash[pigeon_name] == nil 
+          new_hash[pigeon_name] = {key=>["#{key2}"]}
+          #creates a new array 
+        elsif new_hash[pigeon_name][key] != nil  
+          puts new_hash[pigeon_name][key]
+          new_hash[pigeon_name][key] << key2.to_s 
+          #binding.pry 
+          #appends to existing array 
+        end 
         
       end 
     end 
