@@ -28,7 +28,7 @@ def nyc_pigeon_organizer(data)
         
         if new_hash[pigeon_name] == nil 
           new_hash[pigeon_name]= {key: [key2]}
-        
+        end 
         
       end 
       #binding.pry 
