@@ -32,7 +32,7 @@ def nyc_pigeon_organizer(data)
           #creates a new array 
         else 
           new_hash[pigeon_name][key] << key2.to_s 
-          #binding.pry 
+          binding.pry 
           #appends to existing array 
         end 
         
