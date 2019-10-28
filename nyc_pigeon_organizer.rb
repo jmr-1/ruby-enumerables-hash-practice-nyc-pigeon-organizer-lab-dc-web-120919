@@ -37,9 +37,8 @@ def nyc_pigeon_organizer(data)
         end 
         
       end 
-      #binding.pry 
     end 
   end 
   puts "Start report \n #{new_hash} \n Hash2 \n #{new_hash2} \n *End report*" 
-  return new_hash2 
+  return new_hash 
 end
