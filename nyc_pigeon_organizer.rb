@@ -17,7 +17,7 @@ def nyc_pigeon_organizer(data)
         #binding.pry 
         
         tiny_hash = {key=>key2.to_s}
-        new_hash[pigeon_name] = {key=>key2}
+        #new_hash[pigeon_name] = {key=>key2}
         
         #appends to an entry, else creates an entry with the key:value pair 
         if new_hash2[pigeon_name] != nil 
