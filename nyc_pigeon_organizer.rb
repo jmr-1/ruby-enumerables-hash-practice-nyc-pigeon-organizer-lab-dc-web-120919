@@ -16,7 +16,7 @@ def nyc_pigeon_organizer(data)
       value2.each do |pigeon_name|
         #binding.pry 
         
-        tiny_hash = {key=>key2}
+        tiny_hash = {key=>key2.to_s}
         new_hash[pigeon_name] = {key=>key2}
         
         #appends to an entry, else creates an entry with the key:value pair 
