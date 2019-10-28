@@ -27,7 +27,7 @@ def nyc_pigeon_organizer(data)
         #problem with above is that it isn't an array
         
         if new_hash[pigeon_name] == nil 
-          new_hash[pigeon_name]= {key: [key2]}
+          new_hash[pigeon_name]= {key=>"#{key2}"}
         end 
         
       end 
