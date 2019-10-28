@@ -22,19 +22,20 @@ def nyc_pigeon_organizer(data)
         if new_hash2[pigeon_name] != nil 
           new_hash2[pigeon_name].merge!(tiny_hash)
         else 
-          new_hash2[pigeon_name] = {key=>"#{key2}"}
+          new_hash2[pigeon_name] = {key=>"#{key2.to_a}"}
         end 
         
         #problem with above is that it isn't an array
         
-        if new_hash[pigeon_name] == nil 
-          new_hash[pigeon_name] = {key=>["#{key2}"]}
-          #creates a new array 
-        else 
-          new_hash[pigeon_name][key] << key2.to_s 
-          #binding.pry 
-          #appends to existing array 
-        end 
+        # if new_hash[pigeon_name] == nil 
+        #   new_hash[pigeon_name] = {key=>["#{key2}"]}
+        #   #creates a new array 
+        # else 
+        #   puts new_hash[pigeon_name][key]
+        #   new_hash[pigeon_name][key] << key2.to_s 
+        #   #binding.pry 
+        #   #appends to existing array 
+        # end 
         
       end 
     end 
