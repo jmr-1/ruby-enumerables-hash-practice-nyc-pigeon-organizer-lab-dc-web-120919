@@ -18,7 +18,7 @@ def nyc_pigeon_organizer(data)
         
         tiny_hash = {key=>key2}
         new_hash[pigeon_name] = {key=>key2}
-        new_hash2[pigeon_name][key] = key2
+        #new_hash2[pigeon_name][key] = key2
         
         #new_hash.merge!(pigeon_name=>{key=>key2}) #no need to interpolate, already string 
         
